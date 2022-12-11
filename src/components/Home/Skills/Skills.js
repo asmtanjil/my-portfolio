@@ -41,17 +41,21 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div id='skill' className='my-20 w-11/12 mx-8'>
-      <h1 className='text-center text-3xl font-bold my-10 uppercase'>Skills</h1>
+    <div id='skill' className='my-20 w-11/12 mx-8 animate__fadeInRight animate__animated animate__slower	3s'>
+      <h1 className='text-center text-4xl font-bold my-10 uppercase'>Skills</h1>
       <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
         {
           skills.map(skill => <div key={skill.id}>
-            <p>{skill.name}</p>
-            <div className='flex items-center'>
-              <progress className="progress progress-info mr-5" value={skill.value} max="100" />
-              <p>{skill.value}%</p>
+
+
+            <div className='flex flex-col justify-center items-center gap-8'>
+              <p>{skill.name}</p>
+              <div className="radial-progress text-primary"
+                style={{ "--value": 70 }}>{skill.value}%
+              </div>
             </div>
 
+            {/* <p>{skill.value}%</p> */}
           </div>
           )
         }

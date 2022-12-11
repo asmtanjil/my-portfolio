@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import Blogs from "../components/Blogs/Blogs";
 import ProjectDetails from "../components/PorjectDetails/ProjectDetails";
 import Main from "../layout/Main";
 import Pages from "../Pages/Pages";
@@ -13,10 +14,14 @@ const router = createBrowserRouter([
         element: <Pages></Pages>
       },
       {
-        path: '/projectDetails',
-        element: <ProjectDetails></ProjectDetails>
+        path: '/blogs',
+        element: <Blogs></Blogs>
       }
     ]
+  },
+  {
+    path: `/projectDetails/:id`,
+    element: <ProjectDetails></ProjectDetails>
   }
 ])
 
