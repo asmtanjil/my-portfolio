@@ -1,14 +1,20 @@
 import React from 'react';
 import './Intro.css'
 
+
 const Intro = () => {
   return (
-    <div className="" id="intro">
-      <section className='my-24 flex flex-col lg:flex-row justify-center items-center'>
+    <div className="mx-8" id="intro">
+      <section className='my-24 flex gap-4 flex-col-reverse lg:flex-row justify-center items-center'>
         <div className="intro">
           <div className='intro'>
-            <h1 className='intro-name text-5xl'><span className='text-gray-400'>Hello there?</span> <br /> I'M ABU SALAH MD TANJIL</h1>
-            <h2 className='intro-title text-4xl'>FRONT-END DEVELOPER</h2>
+            <h3 className='text-gray-400 text-xl lg:text-4xl mb-4'>Hello there?</h3>
+
+            <h1 className='text-2xl lg:text-5xl'>I'M</h1>
+
+            <h1 className='intro-name  text-3xl lg:text-6xl animate__fadeInLeft animate__animated animate__slower	3s'>ABU SALAH MD TANJIL</h1>
+
+            <h2 className='intro-title text-2xl lg:text-5xl animate__fadeInRight animate__animated animate__slower	3s'>FRONT-END DEVELOPER</h2>
           </div>
           <div className='text-lg flex flex-col justify-start items-start my-12'>
             <h2>I'm a Front-End Developer focused on</h2>

@@ -37,13 +37,13 @@ const Projects = () => {
   ]
 
   return (
-    <div className='' id="projects">
+    <div className='mx-8' id="projects">
       <div id='projects' className='my-20'>
         <h1 className='text-center text-4xl font-bold my-10 uppercase'>Projects</h1>
         <h2 className='text-3xl text-center my-4'>You can visit my MERN-Stack Projects here</h2>
         <div className='grid lg:grid-cols-3  gap-12 '>
           {
-            projects && projects.map(project => <div key={project.id} className="card border-1 bg-slate-900 shadow-xl">
+            projects && projects.map(project => <div key={project.id} className="card border-1 bg-slate-900 shadow-xl animate__fadeInLeft animate__animated animate__slower	3s">
               <figure><img src={project.img} className="p-8 rounded" alt="car!" /></figure>
               <div className="card-body">
                 <h2 className="card-title">{project.name}</h2>

@@ -17,7 +17,7 @@ const Navbar = () => {
               <li><a href='#contact'>Contact Me</a></li>
             </ul>
           </div>
-          <a href='#home' className="btn btn-ghost normal-case text-xl">Abu Salah Md Tanjil</a>
+          <a href='#home' className="btn btn-ghost normal-case text-xl">Tanjil's Portfolio</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -29,7 +29,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a target='blank' href='https://drive.google.com/file/d/1roDcdkd4gdSJrbLr9Wn-_I4PJ3d6Vc8E/view?usp=share_link' className="btn">Download Resume</a>
+          <a target='blank' href='https://drive.google.com/file/d/1roDcdkd4gdSJrbLr9Wn-_I4PJ3d6Vc8E/view?usp=share_link' className="btn capitalize">My Resume</a>
         </div>
       </div>
     </div>
