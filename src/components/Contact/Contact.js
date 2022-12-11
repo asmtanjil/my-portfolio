@@ -19,14 +19,14 @@ const Contact = () => {
   return (
     <div id='contact' className='mt-20 mb-36 shadow-2xl p-10 mx-8'>
       <h1 className='text-center text-3xl uppercase my-10'>Contact Me</h1>
-      <form className='grid grid-cols-2 gap-5' ref={form} onSubmit={sendEmail}>
+      <form ref={form} onSubmit={sendEmail}>
+        <div className='grid grid-cols-2 gap-5'>
+          <input placeholder='Your Name' className="input input-bordered w-full" type="text" name="user_name" />
 
-
-        <input placeholder='Your Name' className="input input-bordered w-full" type="text" name="user_name" />
-
-        <input placeholder='Your Email' className="input input-bordered w-full" type="email" name="user_email" />
-        <textarea placeholder='Message' className="textarea textarea-bordered grid col-span-2" name="message" />
-        <input className='btn grid col-span-2 capitalize' type="submit" value="Send An Email" />
+          <input placeholder='Your Email' className="input input-bordered w-full" type="email" name="user_email" />
+          <textarea placeholder='Message' className="textarea h-[250px] textarea-bordered grid col-span-2" name="message" />
+          <input className='btn grid col-span-2 capitalize' type="submit" value="Send An Email" />
+        </div>
       </form>
     </div>
   );
