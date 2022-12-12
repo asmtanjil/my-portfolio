@@ -4,10 +4,10 @@ import Typewriter from 'typewriter-effect';
 const Blogs = () => {
   return (
     <div>
-      <div className='min-h-screen flex justify-center items-center text-3xl font-semibold '>
+      <div className='min-h-screen flex justify-center items-center text-3xl md:text-3xl text-amber-400 font-semibold '>
         <Typewriter
           options={{
-            strings: ['Coming Soon....!!'],
+            strings: ['Blogs Are Coming SooN!!'],
             autoStart: true,
             loop: true,
           }}
