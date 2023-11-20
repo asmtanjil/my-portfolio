@@ -1,5 +1,4 @@
 import React from 'react';
-import './Pages.css'
 import Contact from '../components/Home/Contact/Contact';
 import Intro from '../components/Home/Intro/Intro';
 import Projects from '../components/Home/Projects/Projects';

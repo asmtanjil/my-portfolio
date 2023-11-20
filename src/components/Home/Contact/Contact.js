@@ -19,9 +19,9 @@ const Contact = () => {
     e.target.reset();
   };
   return (
-    <div id='contact' className='mt-20 mb-36 shadow-2xl p-10 mx-8 animate__fadeInRight animate__animated animate__slower	3s'>
-      <h1 className='text-center text-4xl uppercase my-10'>Contact Me</h1>
-      <div className="text-center text-2xl my-20 flex flex-col md:flex-row gap-4 items-center justify-around">
+    <div id='contact' className='p-8 md:p-12'>
+      <h1 className='text-center text-3xl md:text-5xl font-bold my-12'>Contact Me</h1>
+      <div className="text-center md:text-lg my-12 flex flex-col md:flex-row gap-4 items-center justify-around">
         <div className='flex gap-2 items-center'>
           <MdEmail></MdEmail>
           <p>asm.tanjil@gmail.com</p>
@@ -38,12 +38,12 @@ const Contact = () => {
         </div>
       </div>
       <form ref={form} onSubmit={sendEmail}>
-        <div className='grid grid-cols-2 gap-5'>
-          <input placeholder='Your Name' className="input input-bordered w-full" type="text" name="user_name" />
+        <div className='grid grid-cols-1 justify-items-center gap-6'>
+          <input placeholder='Your Name' className="input input-bordered w-full md:w-3/5" type="text" name="user_name" />
 
-          <input placeholder='Your Email' className="input input-bordered w-full" type="email" name="user_email" />
-          <textarea placeholder='Message' className="textarea h-[250px] textarea-bordered grid col-span-2" name="message" />
-          <input className='btn grid col-span-2 capitalize' type="submit" value="Send An Email" />
+          <input placeholder='Your Email' className="input input-bordered w-full md:w-3/5" type="email" name="user_email" />
+          <textarea placeholder='Message' className="textarea h-[80px] md:h-[130px] w-full md:w-3/5 textarea-bordered" name="message" />
+          <input className='btn btn-accent w-full md:w-3/5 capitalize' type="submit" value="Send An Email" />
         </div>
       </form>
     </div>

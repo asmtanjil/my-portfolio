@@ -1,15 +1,16 @@
 import React from 'react';
 import { useParams } from 'react-router';
 
+
 const projects = [
   {
     "id": 1,
     "name": "ADVENTURE-BIKERS",
     "type": "A Bike ReSale Website",
     "imgs": [
-      "https://i.ibb.co/j3BQWyr/Screenshot-161.png",
-      "https://i.ibb.co/j3BQWyr/Screenshot-161.png",
-      "https://i.ibb.co/j3BQWyr/Screenshot-161.png",
+      "https://i.ibb.co/3fNCJSY/ss1.png",
+      "https://i.ibb.co/p0txf42/ss2.png",
+      "https://i.ibb.co/FJXB034/ss3.png",
     ],
     "liveSite": "https://adventure-biker.web.app/",
     "gitHubClient": "https://github.com/asmtanjil/adventure-bikers-client",
@@ -30,9 +31,9 @@ const projects = [
     "name": "TRAVEL WITH TANJIL",
     "type": "A Travel Service-Related",
     "imgs": [
-      "https://i.ibb.co/tphS5H9/Screenshot-157.png",
-      "https://i.ibb.co/tphS5H9/Screenshot-157.png",
-      "https://i.ibb.co/tphS5H9/Screenshot-157.png",
+      "https://i.ibb.co/2d0sqng/ss4.png",
+      "https://i.ibb.co/1fDCYX8/ss5.png",
+      "https://i.ibb.co/tK7zKLM/ss6.png",
     ],
     "liveSite": "https://altitute-trekker.web.app/",
     "gitHubClient": "https://github.com/asmtanjil/travel-with-tanjil-client",
@@ -51,9 +52,9 @@ const projects = [
     "name": "EXPLORE TECH",
     "type": "A E-learning Website",
     "imgs": [
-      "https://i.ibb.co/j3BQWyr/Screenshot-161.png",
-      "https://i.ibb.co/j3BQWyr/Screenshot-161.png",
-      "https://i.ibb.co/j3BQWyr/Screenshot-161.png",
+      "https://i.ibb.co/RNwgpZ2/ss7.png",
+      "https://i.ibb.co/Fw1gpKY/ss8.png",
+      "https://i.ibb.co/wJZxJQk/ss9.png",
     ],
     "liveSite": "https://explore-tech-eaa6f.web.app/",
     "gitHubClient": "https://github.com/asmtanjil/explore-tech-client",
@@ -79,18 +80,18 @@ const ProjectDetails = () => {
 
   return (
     <div>
-      <div className='w-11/12 mx-auto mb-10'>
+      <div className='w-11/12 mx-auto p-8 md:p-12'>
 
         <h3 className='text-2xl font-semibold text-center my-5'>{name}</h3>
         <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
           {
-            imgs?.map((img, i) => <img className='h-56 w-full hover:animate-pulse' key={i} src={img} alt="" />)
+            imgs?.map((img, i) => <img className='w-full hover:animate-pulse' key={i} src={img} alt="" />)
           }
         </div>
         <div className='flex flex-col md:flex-row justify-between my-20'>
-          <a target="blank" className='btn btn-outline my-2' href={liveSite}>Live Website </a>
-          <a target="blank" className='btn btn-outline my-2' href={gitHubClient}>Client Side Link </a>
-          <a target="blank" className='btn btn-outline my-2' href={gitHubServer}>Server Side Link</a>
+          <a target="blank" className='btn btn-accent btn-sm my-2' href={liveSite}>Live Website </a>
+          <a target="blank" className='btn btn-accent btn-sm my-2' href={gitHubClient}>Client Side Link </a>
+          <a target="blank" className='btn btn-accent btn-sm my-2' href={gitHubServer}>Server Side Link</a>
         </div>
         <p>Features:</p>
         <ul className='px-20 my-5' style={{ listStyle: 'disc' }}>

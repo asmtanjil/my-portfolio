@@ -1,38 +1,25 @@
 import React from 'react';
 import './Intro.css'
 import Typewriter from 'typewriter-effect';
+// import { BsDownload } from 'react-icons/bs';
 
 
 const Intro = () => {
   return (
-    <div className="mx-8 animate__fadeInLeft animate__animated animate__slower	3s" id="intro">
-      <section className='my-24 flex gap-4 flex-col-reverse lg:flex-row justify-center items-center'>
-        <div className="intro w-3/4">
-          <div className='intro'>
-            <h3 className='text-gray-400 text-xl lg:text-4xl mb-4'>Hello there?</h3>
+    <div className="py-8 md:py-12">
+      <div className='px-8 md:px-72'>
 
-            <h1 className='text-2xl lg:text-5xl'>I'M</h1>
+        <p className="text-lg md:text-xl font-bold text-left my-12">Welcome to Abu Salah Md Tanjil's Portfolio</p>
 
-            <h1 className='intro-name  text-3xl lg:text-6xl animate__fadeInLeft animate__animated animate__slower	3s'>ABU SALAH MD TANJIL</h1>
+        <h3 className='md:text-lg text-left'>Greetings! I'm <span className='text-accent text-lg md:text-xl font-semibold'>Abu Salah Md Tanjil</span>, a passionate <span className='text-accent text-xl md:text-2xl font-semibold'><Typewriter
+          options={{
+            strings: ['MERN-STACK DEVELOPER', 'FRONTEND DEVELOPER', 'FULL-STACK DEVELOPER'],
+            autoStart: true,
+            loop: true,
+          }}
+        /></span> on a journey of continuous learning and innovation. With one year of immersive experience in mastering the intricacies of MongoDB, Express.js, React.js, and Node.js, I'm excited to present my portfolio—a culmination of my passion for web development and commitment to staying at the forefront of technology.</h3>
 
-            <div className="intro-title text-2xl lg:text-5xl">
-              <Typewriter
-                options={{
-                  strings: ['WEB DEVELOPER', 'FRONT-END DEVELOPER', 'MERN-STACK DEVELOPER'],
-                  autoStart: true,
-                  loop: true,
-                }}
-              />
-            </div>
-
-            {/* <h2 className='intro-title text-2xl lg:text-5xl animate__fadeInRight animate__animated animate__slower	3s'>FRONT-END DEVELOPER</h2> */}
-          </div>
-          <button className='btn btn-primary my-4'><a href="https://drive.google.com/file/d/1roDcdkd4gdSJrbLr9Wn-_I4PJ3d6Vc8E/view?usp=share_link" target="blank">My Resume</a></button>
-        </div>
-        <div className='image'>
-          <img src="https://i.ibb.co/Hn7x4MB/rsz-rsz-35-01-01-02-removebg-preview.png" alt="" />
-        </div>
-      </section>
+      </div>
     </div>
   );
 };

@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { BsDownload } from 'react-icons/bs';
 
 const Navbar = () => {
   return (
-    <div>
+    <div className=''>
       <div className="navbar">
         <div className="navbar-start">
           <div className="dropdown">
@@ -19,7 +20,7 @@ const Navbar = () => {
               <li><a href='#contact'>Contact Me</a></li>
             </ul>
           </div>
-          <a href='#home' className="btn btn-ghost normal-case text-xl">Tanjil's Portfolio</a>
+          <a href='#home' className="btn btn-ghost normal-case text-lg md:text-xl">Tanjil's Portfolio</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -32,7 +33,10 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a target='blank' href='https://drive.google.com/file/d/1roDcdkd4gdSJrbLr9Wn-_I4PJ3d6Vc8E/view?usp=share_link' className="btn capitalize">My Resume</a>
+          <button className="p-1 md:p-2 rounded-lg btn-accent capitalize flex gap-2">
+            <BsDownload className='md:text-lg' />
+            <a target='blank' href='https://drive.google.com/file/d/1R0BJKYXv69puG2zTA6cOcPU9fnLSGTk2/view?usp=drive_link' download>My Resume</a>
+          </button>
         </div>
       </div>
     </div>

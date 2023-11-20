@@ -1,4 +1,5 @@
 import React from 'react';
+import ProgressBar from 'react-animated-progress-bar';
 
 const skills = [
 
@@ -41,21 +42,17 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div id='skill' className='my-20 w-11/12 mx-8 animate__fadeInRight animate__animated animate__slower	3s'>
-      <h1 className='text-center text-4xl font-bold my-10 uppercase'>Skills</h1>
-      <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
+    <div id='skill' className='p-8 md:p-12'>
+      <h1 className='text-center text-3xl md:text-5xl font-bold my-12'>My Skills</h1>
+      <div className='grid grid-cols-2 lg:grid-cols-3 gap-6'>
         {
           skills.map(skill => <div key={skill.id}>
 
 
             <div className='flex flex-col justify-center items-center gap-8'>
               <p>{skill.name}</p>
-              <div className="radial-progress text-primary"
-                style={{ "--value": 70 }}>{skill.value}%
-              </div>
+              <ProgressBar width="180" trackWidth="13" percentage={skill.value} />
             </div>
-
-            {/* <p>{skill.value}%</p> */}
           </div>
           )
         }
